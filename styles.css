@@ -261,7 +261,7 @@ h3 {
 
 .news-window {
   position: relative;
-  max-height: 184px;
+  max-height: 302px;
   overflow: hidden;
   border-radius: 8px;
 }
