@@ -475,6 +475,7 @@ h3 {
 }
 
 .paper-thumb {
+  position: relative;
   width: 184px;
   height: 116px;
   margin: 0;
@@ -490,6 +491,27 @@ h3 {
   display: block;
   object-fit: contain;
   background: #fff;
+}
+
+.venue-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  max-width: calc(100% - 16px);
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: #fff;
+  background: #0b3a78;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.22);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .paper-placeholder {
