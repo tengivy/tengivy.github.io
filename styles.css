@@ -495,7 +495,7 @@ h3 {
 
 .venue-badge {
   position: absolute;
-  top: 4px;
+  top: 0;
   left: 4px;
   z-index: 3;
   display: inline-flex;
