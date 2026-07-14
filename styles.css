@@ -554,6 +554,11 @@ h3 {
   z-index: 1;
 }
 
+.paper-placeholder .venue-badge {
+  position: absolute;
+  z-index: 3;
+}
+
 .paper-placeholder.nav {
   background: linear-gradient(135deg, #0969da, #1f883d);
 }
