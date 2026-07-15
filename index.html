@@ -8,7 +8,7 @@
       content="王腾，东南大学自动化学院副教授、博士生导师，研究方向包括无人系统空间具身智能、视觉导航、机器人学习和多模态环境感知。"
     >
     <title>王腾 | Teng Wang</title>
-    <link rel="stylesheet" href="styles-site.css?v=20260715-lab-visual">
+    <link rel="stylesheet" href="styles-site.css?v=20260715-lab-scene">
   </head>
   <body>
     <header class="masthead">
@@ -54,32 +54,51 @@
               <strong>欢迎访问多视角具身智能实验室</strong>
               <span>Multiview Embodied Intelligence Lab · MEI Lab</span>
             </div>
-            <svg class="lab-visual" viewBox="0 0 260 120" role="img" aria-label="多视角具身智能示意图">
-              <path class="lab-link" d="M62 34 L130 60 L204 32" />
-              <path class="lab-link" d="M58 88 L130 60 L202 88" />
-              <circle class="lab-core" cx="130" cy="60" r="16" />
-              <g class="lab-icon" transform="translate(24 16)">
-                <path d="M20 12 h28 M34 12 v22 M12 12 h8 M48 12 h8 M17 7 l6 10 M51 7 l-6 10" />
-                <rect x="28" y="30" width="12" height="10" rx="2" />
-                <text x="34" y="58">UAV</text>
+            <svg class="lab-visual" viewBox="0 0 330 150" role="img" aria-label="多视角具身智能示意图">
+              <defs>
+                <linearGradient id="lab-scene-grad" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#eff6ff" />
+                  <stop offset="1" stop-color="#ffffff" />
+                </linearGradient>
+              </defs>
+              <rect class="lab-scene-bg" x="6" y="8" width="318" height="134" rx="14" />
+              <path class="lab-grid" d="M34 122 H294 M58 100 H270 M82 78 H246 M48 122 L116 58 M282 122 L214 58 M110 122 L146 58 M220 122 L184 58" />
+              <path class="lab-route" d="M54 104 C96 70 126 106 164 76 S246 52 286 86" />
+              <path class="lab-link" d="M78 38 L166 72 L260 36" />
+              <path class="lab-link" d="M76 112 L166 72 L258 110" />
+              <circle class="lab-core" cx="166" cy="72" r="18" />
+              <path class="lab-core-mark" d="M156 72 h20 M166 62 v20" />
+              <g class="lab-node" transform="translate(44 18)">
+                <circle cx="34" cy="20" r="17" />
+                <path d="M15 20 h38 M34 20 v25 M8 20 h7 M53 20 h7 M18 11 l8 14 M50 11 l-8 14" />
+                <rect x="27" y="41" width="14" height="10" rx="2" />
+                <text x="34" y="68">UAV</text>
               </g>
-              <g class="lab-icon" transform="translate(178 14)">
-                <rect x="20" y="18" width="38" height="30" rx="6" />
-                <circle cx="31" cy="33" r="3" />
-                <circle cx="47" cy="33" r="3" />
-                <path d="M28 44 h22 M39 18 v-9 M35 9 h8" />
-                <text x="39" y="68">Robot</text>
+              <g class="lab-node robot" transform="translate(226 18)">
+                <rect x="16" y="16" width="42" height="32" rx="7" />
+                <circle cx="29" cy="31" r="3" />
+                <circle cx="45" cy="31" r="3" />
+                <path d="M26 43 h22 M37 16 v-9 M32 7 h10 M16 54 h42 M24 54 l-7 9 M50 54 l7 9" />
+                <text x="37" y="76">Robot</text>
               </g>
-              <g class="lab-icon" transform="translate(24 70)">
-                <rect x="18" y="16" width="44" height="28" rx="5" />
-                <circle cx="40" cy="30" r="8" />
-                <path d="M27 16 l6 -8 h14 l6 8" />
-                <text x="40" y="64">View</text>
+              <g class="lab-node camera" transform="translate(36 86)">
+                <rect x="16" y="15" width="48" height="31" rx="6" />
+                <circle cx="40" cy="31" r="9" />
+                <path d="M26 15 l7 -8 h16 l7 8 M61 23 l18 -8 v32 l-18 -8" />
+                <text x="44" y="68">Multi-view</text>
               </g>
-              <g class="lab-icon" transform="translate(176 70)">
-                <path d="M18 42 l20 -30 l20 30 z M38 12 v30" />
-                <circle cx="38" cy="42" r="5" />
-                <text x="38" y="64">3D</text>
+              <g class="lab-node space" transform="translate(228 88)">
+                <path d="M16 40 l24 -30 l24 30 z M40 10 v30 M24 40 h32" />
+                <circle cx="40" cy="40" r="5" />
+                <path d="M67 22 h15 M75 14 v16" />
+                <text x="45" y="68">3D Space</text>
+              </g>
+              <g class="lab-points">
+                <circle cx="116" cy="94" r="3" />
+                <circle cx="138" cy="82" r="3" />
+                <circle cx="198" cy="70" r="3" />
+                <circle cx="232" cy="88" r="3" />
+                <circle cx="264" cy="72" r="3" />
               </g>
             </svg>
           </div>

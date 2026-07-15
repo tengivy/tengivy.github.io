@@ -223,10 +223,10 @@ h3 {
 
 .lab-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.85fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
+  gap: 22px;
   align-items: center;
-  max-width: 860px;
+  max-width: 940px;
   margin: 0 0 22px;
   padding: 18px 20px 18px 22px;
   border: 1px solid #bfdbfe;
@@ -256,16 +256,37 @@ h3 {
 
 .lab-visual {
   width: 100%;
-  max-width: 260px;
-  min-height: 116px;
+  max-width: 330px;
+  min-height: 150px;
   justify-self: end;
+}
+
+.lab-scene-bg {
+  fill: url("#lab-scene-grad");
+  stroke: #dbeafe;
+  stroke-width: 1.5;
+}
+
+.lab-grid {
+  fill: none;
+  stroke: #cbd5e1;
+  stroke-width: 1;
+  opacity: 0.75;
+}
+
+.lab-route {
+  fill: none;
+  stroke: #1f883d;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  opacity: 0.9;
 }
 
 .lab-link {
   fill: none;
   stroke: #93c5fd;
-  stroke-width: 2;
-  stroke-dasharray: 5 5;
+  stroke-width: 2.2;
+  stroke-dasharray: 6 5;
 }
 
 .lab-core {
@@ -274,13 +295,20 @@ h3 {
   stroke-width: 2;
 }
 
-.lab-icon {
+.lab-core-mark {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.lab-node {
   color: #1f2937;
 }
 
-.lab-icon path,
-.lab-icon rect,
-.lab-icon circle {
+.lab-node path,
+.lab-node rect,
+.lab-node circle {
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -288,11 +316,29 @@ h3 {
   stroke-linejoin: round;
 }
 
-.lab-icon text {
+.lab-node.robot {
+  color: #0f766e;
+}
+
+.lab-node.camera {
+  color: #7c3aed;
+}
+
+.lab-node.space {
+  color: #b42318;
+}
+
+.lab-node text {
   fill: var(--muted);
   font-size: 11px;
   font-weight: 700;
   text-anchor: middle;
+}
+
+.lab-points circle {
+  fill: #0ea5e9;
+  stroke: #ffffff;
+  stroke-width: 1.5;
 }
 
 .quick-facts {
