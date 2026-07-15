@@ -223,12 +223,12 @@ h3 {
 
 .lab-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   gap: 22px;
   align-items: center;
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 0 22px;
-  padding: 18px 20px 18px 22px;
+  padding: 18px 18px 18px 22px;
   border: 1px solid #bfdbfe;
   border-left: 4px solid var(--blue);
   border-radius: 6px;
@@ -256,89 +256,12 @@ h3 {
 
 .lab-visual {
   width: 100%;
-  max-width: 330px;
-  min-height: 150px;
+  height: 168px;
+  object-fit: cover;
+  object-position: center;
   justify-self: end;
-}
-
-.lab-scene-bg {
-  fill: url("#lab-scene-grad");
-  stroke: #dbeafe;
-  stroke-width: 1.5;
-}
-
-.lab-grid {
-  fill: none;
-  stroke: #cbd5e1;
-  stroke-width: 1;
-  opacity: 0.75;
-}
-
-.lab-route {
-  fill: none;
-  stroke: #1f883d;
-  stroke-width: 2.5;
-  stroke-linecap: round;
-  opacity: 0.9;
-}
-
-.lab-link {
-  fill: none;
-  stroke: #93c5fd;
-  stroke-width: 2.2;
-  stroke-dasharray: 6 5;
-}
-
-.lab-core {
-  fill: #dbeafe;
-  stroke: var(--blue);
-  stroke-width: 2;
-}
-
-.lab-core-mark {
-  fill: none;
-  stroke: var(--blue);
-  stroke-width: 2;
-  stroke-linecap: round;
-}
-
-.lab-node {
-  color: #1f2937;
-}
-
-.lab-node path,
-.lab-node rect,
-.lab-node circle {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.lab-node.robot {
-  color: #0f766e;
-}
-
-.lab-node.camera {
-  color: #7c3aed;
-}
-
-.lab-node.space {
-  color: #b42318;
-}
-
-.lab-node text {
-  fill: var(--muted);
-  font-size: 11px;
-  font-weight: 700;
-  text-anchor: middle;
-}
-
-.lab-points circle {
-  fill: #0ea5e9;
-  stroke: #ffffff;
-  stroke-width: 1.5;
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
 }
 
 .quick-facts {
@@ -767,6 +690,7 @@ h3 {
 
   .lab-visual {
     justify-self: start;
+    max-width: 100%;
   }
 
 }
