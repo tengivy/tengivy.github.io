@@ -219,6 +219,7 @@ h3 {
 
 .hero-copy > p {
   max-width: 820px;
+  text-align: justify;
 }
 
 .lab-card {
